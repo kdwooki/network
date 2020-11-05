@@ -1,9 +1,7 @@
 # pcap_to_json
 
-### 1. pcap 파일에서 각 패킷의 정보 추출하기
+### pcap 파일에서 각 패킷의 정보 추출 후 elasticsearch에 올립니다.
 ### → time, source ip, destination ip, port, protocol type
-### 2. json파일로 저장하기
-### 3. elasticsearch에 올리기
 -----------------
 1-1) 속도 측정을 위해 237M의 Pcap 파일을 생성합니다.
  → 총 45만개(452396개)의 패킷

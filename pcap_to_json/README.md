@@ -31,8 +31,9 @@
 + Json file을 elasticsearch서버에 올리는데 소요 시간 → python:65sec, C: 41sec
 + C언어 libpcap library가 훨씬 빠른 속도를 보여줍니다.
 
+
 + 병렬 실행을 사용하여 10M pcap file 25개(250M, 약124만개)를 json file 25개(165.7M)로 변환 → 0.4sec 소요
 + 병렬 실행을 사용하여 json file을 elastic search에 insert → 11sec 소요
 
-#### 패킷으 중복 제거
+#### 패킷의 중복 제거
 4-1) jsonhash.cpp → unordered set을 사용하여 패킷들의 중복 제거 후 json으로 변환합니다.
